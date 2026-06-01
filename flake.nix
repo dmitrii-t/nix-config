@@ -40,6 +40,8 @@
 	   "waterfox"
 	   "google-drive"
 	   "telegram-desktop"
+	   "slack"
+	   "google-chrome"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
