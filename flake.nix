@@ -39,6 +39,7 @@
 	   "steam"
 	   "waterfox"
 	   "google-drive"
+	   "telegram-desktop"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
