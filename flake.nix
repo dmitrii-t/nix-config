@@ -29,6 +29,7 @@
 	pkgs.jetbrains-toolbox
 	pkgs.jetbrains.phpstorm
 	pkgs.jetbrains.pycharm
+	pkgs.stow
       ];
 
       homebrew = {
@@ -43,6 +44,7 @@
 	   "slack"
 	   "google-chrome"
 	   "happ"
+	   "tunnelblick"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
@@ -65,10 +67,12 @@
 	  Clicking = true;
 	  TrackpadPinch = true;
 	};
-	NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
-	NSGlobalDomain.AppleInterfaceStyle = "Dark";
-	NSGlobalDomain.KeyRepeat = 2;
-	NSGlobalDomain.InitialKeyRepeat = 60;
+	NSGlobalDomain = {
+	  "com.apple.mouse.tapBehavior" = 1;
+	  AppleInterfaceStyle = "Dark";
+	  KeyRepeat = 2;
+	  InitialKeyRepeat = 10;
+	};
 	menuExtraClock.Show24Hour = true;
       };
 
