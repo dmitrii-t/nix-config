@@ -42,6 +42,7 @@
 	   "telegram-desktop"
 	   "slack"
 	   "google-chrome"
+	   "happ"
 	];
 	onActivation.cleanup = "zap";
 	onActivation.autoUpdate = true;
