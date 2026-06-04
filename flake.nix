@@ -70,7 +70,7 @@
           "com.apple.mouse.tapBehavior" = 1;
           AppleInterfaceStyle = "Dark";
           KeyRepeat = 2;
-          InitialKeyRepeat = 10;
+          InitialKeyRepeat = 20;
         };
         menuExtraClock.Show24Hour = true;
       };
