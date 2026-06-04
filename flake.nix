@@ -26,54 +26,52 @@
         pkgs.obsidian
         pkgs.keepassxc
         pkgs.just
-	pkgs.jetbrains-toolbox
-	pkgs.jetbrains.phpstorm
-	pkgs.jetbrains.pycharm
-	pkgs.stow
+	      pkgs.stow
       ];
 
       homebrew = {
         enable = true;
-	casks = [
-	   "openmtp"
-	   "amneziavpn"
-	   "steam"
-	   "waterfox"
-	   "google-drive"
-	   "telegram-desktop"
-	   "slack"
-	   "google-chrome"
-	   "happ"
-	   "tunnelblick"
-	];
-	onActivation.cleanup = "zap";
-	onActivation.autoUpdate = true;
-	onActivation.upgrade = true;
+        casks = [
+           "openmtp"
+           "amneziavpn"
+           "steam"
+           "waterfox"
+           "google-drive"
+           "telegram-desktop"
+           "slack"
+           "google-chrome"
+           "happ"
+           "tunnelblick"
+           "jetbrains-toolbox"
+        ];
+        onActivation.cleanup = "zap";
+        onActivation.autoUpdate = true;
+        onActivation.upgrade = true;
       };
 
       system.defaults = {
         dock = {
-  	  autohide = true;
-	  orientation = "right";
-	  show-recents = false;
-	};
-	finder = {
-	  AppleShowAllExtensions = true;
-	  AppleShowAllFiles = true;
-	  _FXSortFoldersFirst = true;
-	};
-	loginwindow.GuestEnabled = false;
-	trackpad = {
-	  Clicking = true;
-	  TrackpadPinch = true;
-	};
-	NSGlobalDomain = {
-	  "com.apple.mouse.tapBehavior" = 1;
-	  AppleInterfaceStyle = "Dark";
-	  KeyRepeat = 2;
-	  InitialKeyRepeat = 10;
-	};
-	menuExtraClock.Show24Hour = true;
+          autohide = true;
+          orientation = "right";
+          show-recents = false;
+        };
+        finder = {
+          AppleShowAllExtensions = true;
+          AppleShowAllFiles = true;
+          _FXSortFoldersFirst = true;
+        };
+        loginwindow.GuestEnabled = false;
+        trackpad = {
+          Clicking = true;
+          TrackpadPinch = true;
+        };
+        NSGlobalDomain = {
+          "com.apple.mouse.tapBehavior" = 1;
+          AppleInterfaceStyle = "Dark";
+          KeyRepeat = 2;
+          InitialKeyRepeat = 10;
+        };
+        menuExtraClock.Show24Hour = true;
       };
 
 
