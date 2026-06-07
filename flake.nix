@@ -27,6 +27,7 @@
         pkgs.keepassxc
         pkgs.just
 	      pkgs.stow
+        pkgs.shottr
       ];
 
       homebrew = {
