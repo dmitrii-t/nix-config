@@ -44,7 +44,7 @@
            "happ"
            "tunnelblick"
            "jetbrains-toolbox"
-           "claude-code"
+           "claude-code@latest"
         ];
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
